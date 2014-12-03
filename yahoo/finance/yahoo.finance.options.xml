@@ -192,7 +192,6 @@
 			
 			var optionsChainQuery = y.xpath(
 							data, 
-							//"//div[@class='quote-table-overflow']/table/tbody/tr[@data-row-quote='_']"
 							"//div[@class='quote-table-overflow']/table/tbody/tr"
 			);
 			
