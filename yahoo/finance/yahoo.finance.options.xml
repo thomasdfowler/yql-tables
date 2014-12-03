@@ -188,7 +188,7 @@
 			}
 
 			var yQuery = y.rest( optionsChainURL );	
-			var data = yQuery.accept( "text/html" ).get().response;
+			var data = yQuery.accept( "text/xhtml" ).get().response;
 			
 			var optionsChainQuery = y.xpath(
 							data, 
