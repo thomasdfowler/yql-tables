@@ -200,8 +200,6 @@
 				data,
 				"//table[@class='yfnc_mod_table_title1']/tr/td[last()]/p"
 			);
-
-			y.log( "data: " + data );
 			
 			var expiryDay = getExpiration();
 					
