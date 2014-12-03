@@ -65,9 +65,11 @@
 				
 				var results = optionsChainQuery;
 						
-				elements = results.*.length();
+				elementsLen = results.*.length();
 				
-				if ( elements == 0 )
+				y.log( "elementsLen: " + elementsLen );
+				
+				if ( elementsLen == 0 )
 				{
 					return false;
 				}
