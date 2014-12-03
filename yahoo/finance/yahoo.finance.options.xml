@@ -190,7 +190,6 @@
 			var yQuery = y.rest( optionsChainURL );	
 			var data = yQuery.accept( "text/html" ).get().response;
 			
-			y.log( "data: " + data );
 			var optionsChainQuery = y.xpath(
 							data, 
 							"//div[@class='quote-table-overflow']/table/tbody/tr[@data-row-quote='_']"
@@ -201,6 +200,8 @@
 				"//table[@class='yfnc_mod_table_title1']/tr/td[last()]/p"
 			);
 
+			y.log( "data: " + data );
+			
 			var expiryDay = getExpiration();
 					
 			var optionsChain;
