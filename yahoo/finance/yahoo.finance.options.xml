@@ -8,7 +8,7 @@
             Yahoo Finance Quotes - Options Chain
         </description>
         <sampleQuery>
-            SELECT * FROM {table} WHERE symbol='GOOG' AND expiration='2010-06'
+            SELECT * FROM {table} WHERE symbol='GOOG' AND expiration='2015-06'
         </sampleQuery>
     </meta>
     <bindings>
@@ -192,7 +192,8 @@
 			
 			var optionsChainQuery = y.xpath(
 							data, 
-							"//div[@class='quote-table-overflow']/table/tbody/tr[@data-row-quote='_']"
+							//"//div[@class='quote-table-overflow']/table/tbody/tr[@data-row-quote='_']"
+							"//div[@class='quote-table-overflow']/table/tbody/tr"
 			);
 			
 			var expiresQuery = y.xpath( 
