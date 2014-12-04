@@ -65,7 +65,7 @@
 				
 				var results = optionsChainQuery;
 				
-				optionsLen = results..length();
+				optionsLen = results.tr.length();
 				
 				y.log("optionsLen: " + optionsLen);
 				
