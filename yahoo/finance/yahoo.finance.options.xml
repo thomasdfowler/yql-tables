@@ -69,7 +69,7 @@
 				
 				y.log("optionsLen: " + optionsLen);
 				
-				if (elementsLen == 0)
+				if (optionsLen == 0)
 				{
 					return false;
 				}
